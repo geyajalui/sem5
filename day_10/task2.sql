@@ -1,0 +1,10 @@
+create database kgcas;
+use kgcas;
+create table student(name varchar(32),dept varchar(5),sec char(1), marks int);
+select * from student;
+insert into student values("riya","cs","c",78),("priya","cs","c",54),("sam","cs","c",80),("Harshini","cs","c",35),("Meera","cs","c",25);
+select * from student;
+update student set name="ypd" where name="priya";
+select *from student;
+select * from student where marks<60;
+select name,dept,sec from student;
